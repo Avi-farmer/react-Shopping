@@ -101,7 +101,7 @@ body {
 
 .pageSection {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, 250px);
     gap: 10px;
 }
 
