@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-
 import './App.css'
 import LandingPage from './stores/pages/LandingPage'
 import Kitchen from './stores/components/Kitchen'
@@ -29,7 +28,7 @@ import FridgeSingle from './stores/singles/FridgeSingle'
 
 const App = () => {
   return (
-    <div>
+    <div className='total_pages'>
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/kitchen' element={<KitchenPage />} />
