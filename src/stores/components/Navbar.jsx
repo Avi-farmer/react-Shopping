@@ -5,17 +5,17 @@ import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
 
-  const {cartItems }= useCart()
+  const { cartItems } = useCart()
 
   return (
     <div className="navbar-section">
 
       <div className="navSection">
-      <Link to='/' className="custom-link">
-  <div className="title">
-    <h2>E-Mart</h2>
-  </div>
-</Link>
+        <Link to='/' className="custom-link">
+          <div className="title">
+            <h2>E-Mart</h2>
+          </div>
+        </Link>
 
         <div className="search">
           <input type="text" placeholder="Search..." />
@@ -23,13 +23,13 @@ const Navbar = () => {
         <div className="user">
           <div className="user-detail">SignIN/SignUp</div>
         </div>
-          <Link to= '/cart'>
+        <Link to='/cart'>
           <div className="cart">Cart
-          <span>
-            {cartItems.length}
-          </span>
+            <span>
+              {cartItems.length}
+            </span>
           </div>
-          </Link>
+        </Link>
       </div>
       <div className="subMenu">
         <ul>
